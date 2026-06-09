@@ -1,0 +1,11 @@
+stripe 
+
+Publishable key : pk_test_51QcnVcC22jIewEv8xNRTJ0m8SmFJaw5eLipEwIgZ6kk1EwP69DSOqS53CmrB6GXx9jekuAud8YQQZqeNTFV305su00ePjleN3y
+
+Secret Key : sk_test_51QcnVcC22jIewEv8pYQkfbUe5S3hPz1HEcFFo9RYm5xLF06AWOY9BfhnxC3D7OUCdYaE6rmP0aZbQwHcdjpWgl6V00Hwuc9DV6
+
+Card Information
+
+Card no : 4242 4242 4242 4242
+validity : 12 / 34  
+CVC : 567 

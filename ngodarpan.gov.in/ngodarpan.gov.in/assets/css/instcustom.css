@@ -1,0 +1,27 @@
+.inst-heading p{
+   font-size: 20px;
+   line-height: 5px !important;
+}
+.inst-terms{
+    margin-top: 50px;
+    font-size: 15px;
+}
+.footer-term{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.label-checkbox{
+    font-size: 18px;
+    font-weight: bold;
+}
+.c-box{
+    height: 15px;
+    width: 15px;
+}
+.modal-container h3{
+    margin-top: 20px;
+    background-color: yellowgreen;
+    color: #ffffff;
+    padding: 10px;
+}
