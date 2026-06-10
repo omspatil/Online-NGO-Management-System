@@ -4,7 +4,7 @@
 
 ![ASP.NET](https://img.shields.io/badge/ASP.NET-Web_Forms-512BD4?style=flat-square&logo=dotnet)
 ![CSharp](https://img.shields.io/badge/C%23-.NET_Framework-239120?style=flat-square&logo=csharp)
-![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?style=flat-square&logo=mysql)
+![SQL Server](https://img.shields.io/badge/Database-SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver)
 ![Visual Studio](https://img.shields.io/badge/IDE-Visual_Studio_2022-5C2D91?style=flat-square&logo=visualstudio)
 ![License](https://img.shields.io/badge/License-Academic-orange?style=flat-square)
 
@@ -27,7 +27,7 @@
 
 ## 📌 Overview
 
-The **Online NGO Management System** is a web-based application developed using **ASP.NET Web Forms**, **C#**, and **MySQL**. It provides a centralized platform for:
+The **Online NGO Management System** is a web-based application developed using **ASP.NET Web Forms**, **C#**, and **Microsoft SQL Server**. It provides a centralized platform for:
 
 - ✅ NGO registration and administrator verification
 - ✅ Donor registration, login, and donation management
@@ -88,7 +88,7 @@ The system bridges the gap between NGOs and donors by ensuring that only **verif
 |---|---|
 | **Frontend** | ASP.NET Web Forms, HTML, CSS, JavaScript |
 | **Backend** | C# (.NET Framework) |
-| **Database** | MySQL |
+| **Database** | MS SQL Server (SQL Server Management Studio - SSMS) |
 | **IDE** | Visual Studio 2022 |
 | **Version Control** | Git & GitHub |
 
@@ -96,7 +96,7 @@ The system bridges the gap between NGOs and donors by ensuring that only **verif
 
 ## 🗂️ System Modules
 
-```
+```text
 Online NGO Management System
 │
 ├── 1. NGO Registration and Verification
@@ -127,8 +127,8 @@ Make sure the following are installed on your system:
 
 - [Visual Studio 2022](https://visualstudio.microsoft.com/)
 - [.NET Framework](https://dotnet.microsoft.com/)
-- [MySQL Server](https://dev.mysql.com/downloads/mysql/)
-- [MySQL Connector for .NET](https://dev.mysql.com/downloads/connector/net/)
+- [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
 
 ### Setup Steps
 
@@ -138,33 +138,29 @@ git clone https://github.com/omspatil/Online-NGO-Management-System.git
 ```
 
 **2. Open the solution in Visual Studio**
-```
+```text
 File → Open → Project/Solution → select the .sln file
 ```
 
-**3. Create the MySQL database**
-```sql
-CREATE DATABASE ngo_management;
-```
+**3. Database Setup via SSMS**
+- Open **SQL Server Management Studio (SSMS)** and connect to your local server.
+- Open the provided `.sql` database script file from the repository.
+- Execute the script to create the `ngo_management` database and required tables.
 
-**4. Import the database script**
-```
-Run the provided SQL script file to create all required tables and seed data.
-```
+**4. Update the connection string**
 
-**5. Update the connection string**
-
-Open `Web.config` and update the connection string:
+Open `Web.config` and update the connection string to match your SQL Server instance name:
 ```xml
 <connectionStrings>
   <add name="NGOConnectionString"
-       connectionString="Server=localhost;Database=ngo_management;Uid=root;Pwd=yourpassword;"
-       providerName="MySql.Data.MySqlClient" />
+       connectionString="Data Source=YOUR_SERVER_NAME;Initial Catalog=ngo_management;Integrated Security=True;"
+       providerName="System.Data.SqlClient" />
 </connectionStrings>
 ```
+*(Note: Replace `YOUR_SERVER_NAME` with your actual SQL Server name, such as `.\SQLEXPRESS` or `localhost`)*
 
-**6. Build and run the project**
-```
+**5. Build and run the project**
+```text
 Build → Build Solution (Ctrl + Shift + B)
 Debug → Start (F5)
 ```
@@ -206,18 +202,11 @@ Debug → Start (F5)
 
 ---
 
-## 👨‍💻 Author
-
-**Om Patil**
-
-[![GitHub](https://img.shields.io/badge/GitHub-omspatil-181717?style=flat-square&logo=github)](https://github.com/omspatil)
-
----
-
 ## 📄 License
 
-This project is developed for **academic and educational purposes** as part of the CDAC curriculum.
+This project is developed for **academic and educational purposes** only.
 
 ---
 
 > *"Transparency builds trust. Technology enables transparency."*
+```
