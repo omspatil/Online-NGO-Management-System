@@ -174,19 +174,19 @@ Debug → Start (F5)
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-> *(Add Screenshot)*
+![Home Page](screenshots/Home.png)
 
 ### 📝 NGO Registration
-> *(Add Screenshot)*
+![NGO Registration](screenshots/Registration.png)
 
 ### 📊 Donor Dashboard
-> *(Add Screenshot)*
+![Donor Dashboard](screenshots/Dashboard.png)
 
 ### 🛡️ Admin Dashboard
-> *(Add Screenshot)*
+![Admin Dashboard](screenshots/Admin.png)
 
 ### 💳 Donation Management
-> *(Add Screenshot)*
+![Donation Management](screenshots/Donation Page.png)
 
 ---
 
